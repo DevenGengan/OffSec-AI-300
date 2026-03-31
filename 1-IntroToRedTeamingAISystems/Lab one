@@ -1,0 +1,12 @@
+This lab requires that you have a correctly working VPN connection
+
+Sometimes, the lab machine could be busy hence not being able to get to the agent to login.
+
+Once you click on the play button, that lab machine start to get built - takes about 90 seconds.
+
+Once the lab machine is ready, click on the information icon to see the 
+
+ IP of the machine - that you would type in the browser
+ Credentials provided
+    Username - you will use to login
+    Password - you will use to login
