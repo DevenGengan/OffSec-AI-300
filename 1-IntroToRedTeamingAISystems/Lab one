@@ -2,6 +2,8 @@ This lab requires that you have a correctly working VPN connection
 
 Sometimes, the lab machine could be busy hence not being able to get to the agent to login.
 
+Prerequisite: You are connected to the OffSec VPN successfully.
+
 Once you click on the play button, that lab machine start to get built - takes about 90 seconds.
 
 Once the lab machine is ready, click on the information icon to see the 
@@ -10,3 +12,17 @@ Once the lab machine is ready, click on the information icon to see the
  Credentials provided
     Username - you will use to login
     Password - you will use to login
+
+Troubleshooting:
+
+A. Cannot connect to IP address in a browser - connection times out
+
+1. ping the lab machine IP 
+2. traceroute the lab machine IP
+
+Success in both of the above means your connection is working.
+
+B. Cannot connect to the IP address in a browser - VPN is connected
+
+1. Connect to port 3000 , type in the browser address bar ipaddress:3000
+
