@@ -1,1 +1,33 @@
-Generally there are three ways
+Generally there are three ways to connect to a lab machine.
+
+(On the OffSec dashboard, there is a menu on the left hand side.
+
+Under the section "Connectivity" you will see the three options)
+
+Option 1: Click "My Kali" aka  OffSec's Kali In Browser (KIB)
+
+Option 2: Click "My Windows" aka OffSec's Windows' In Browser (WIB) 
+
+For the AI 300 course at the time of writing this note, the recommended method is option 3.
+
+Option 3: Use your own Kali VM and ownload the VPN .ovpn file in the VM.
+
+You will then need to run openvpn to connect to the lab machine.
+
+More detailed steps:
+
+1. Start up your Kali VM and open a browser
+2. Log into the OffSec portal and under "connectivity" which appears on the left hand side menu, click "VPN"
+3. An openvpn profile will be downloaded onto your machine.
+4. Open a terminal in the same folder as your openvpn file (you could move the file to a folder you made for the course)
+5. type the ff:
+   sudo openvpn --config filename.ovpn
+
+   the terminal will output information , wait until you see "Initialization sequence complete" , seeing that output means that the connection is successful. 
+
+6. After you did this, you can start a lab, so for example , for  lab one, clicking on the lab will create a machine with an IP and credentials - takes about 90 seconds.
+
+7. You sould test connectivity to the lab machine in lab 1 , so you know your vpn is working.
+
+7.1 ping the lab 1 machine ip , it should be successful
+7.2 traceroute the lab 1 machine ip, it should be successful
